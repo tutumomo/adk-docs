@@ -91,11 +91,7 @@ Create a `.env` file in the same folder:
 touch multi_tool_agent/.env
 ```
 
-You can just copy and paste the following code for now, as more instructions are describe in the next section on [Set up the model](#set-up-the-model).
-
-```python title="multi_tool_agent/.env"
---8<-- "examples/python/snippets/get-started/multi_tool_agent/.env"
-```
+More instructions about this file are described in the next section on [Set up the model](#set-up-the-model).
 
 ![intro_components.png](../assets/quickstart-flow-tool.png)
 
@@ -182,16 +178,16 @@ There are multiple ways to interact with your agent:
     ![adk-web-dev-ui-function-call.png](../assets/adk-web-dev-ui-function-call.png)
 
     **Step 5.** You can also enable your microphone and talk to your agent:
-    
+
     !!!note "Model support for voice/video streaming"
-    
+
         In order to use voice/video streaming in ADK, you will need to use Gemini models that support the Live API. You can find the **model ID(s)** that supports the Gemini Live API in the documentation:
 
         - [Google AI Studio: Gemini Live API](https://ai.google.dev/gemini-api/docs/models#live-api)
         - [Vertex AI: Gemini Live API](https://cloud.google.com/vertex-ai/generative-ai/docs/live-api)
 
         You can then replace the `model` string in `root_agent` in the `agent.py` file you created earlier ([jump to section](#agentpy)). Your code should look something like:
-        
+
         ```py
         root_agent = Agent(
             name="weather_time_agent",
@@ -203,7 +199,7 @@ There are multiple ways to interact with your agent:
 
 === "Terminal (adk run)"
 
-    Run the following command, to chat with your Google Search agent.
+    Run the following command, to chat with your Weather agent.
 
     ```
     adk run multi_tool_agent
@@ -240,7 +236,7 @@ You've successfully created and interacted with your first agent using ADK!
 ## 🛣️ Next steps
 
 * **Go to the tutorial**: Learn how to add memory, session, state to your agent:
-  [tutorial](tutorial.md).
+  [tutorial](../tutorials/index.md).
 * **Delve into advanced configuration:** Explore the [setup](installation.md)
   section for deeper dives into project structure, configuration, and other
   interfaces.
